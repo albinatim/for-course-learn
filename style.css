@@ -1,9 +1,62 @@
-body{
-				background: pink;
+body {
+  background: pink;
 }
-article{
-				display:inline;
+
+
+.cat {
+  display: inline-block;
+
 }
-img{
-				width: 150px;
+
+img {
+  width: 150px;
+  margin-bottom: 0;
+}
+
+img:hover {
+  opacity: 0.7;
+
+}
+
+.name:hover {
+  color: red;
+}
+
+.cat-desc {
+  display: inline-block;
+  width: 200px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.name-category a {
+  display: block;
+overflow: hidden;
+}
+
+.image {
+  padding-bottom: 0;
+}
+
+input:checked~.all-cats .cat {
+  display: block;
+  width: 100%;
+}
+
+input:checked~.all-cats .cat .image{
+    display: inline-block;
+  vertical-align:top;
+  
+  height:100%;
+} 
+input:checked~.all-cats .cat .name-category{
+  display: inline-block;
+  vertical-align:top;
+
+  height:100%;
+}
+input:checked~.all-cats .cat .cat-desc{
+  display: inline-block;
+  vertical-align:top;
+  height:100%;
 }
